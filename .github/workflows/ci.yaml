@@ -20,6 +20,8 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '21'
+          distribution: 'temurin'
+          check-latest: false
 
       - name: Cache Maven dependencies
         uses: actions/cache@v3
